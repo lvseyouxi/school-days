@@ -76,16 +76,16 @@
     <Compile Include="Assets\Scripts\UI Controller\UIController_Main.cs" />
     <Compile Include="Assets\Scripts\UI Controller\UIControllerForMainMenu.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
