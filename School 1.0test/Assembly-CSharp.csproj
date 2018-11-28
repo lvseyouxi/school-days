@@ -61,31 +61,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Game Controller\NumericalController\HiddenNumerical.cs" />
-    <Compile Include="Assets\Scripts\Game Controller\NumericalController\NumericalDetection.cs" />
-    <Compile Include="Assets\Scripts\Game Controller\NumericalController\ObviousNumerical.cs" />
-    <Compile Include="Assets\Scripts\Game Controller\TimeController.cs" />
-    <Compile Include="Assets\Scripts\School Numerical\People\Students\UnderGraduate.cs" />
-    <Compile Include="Assets\Scripts\School Numerical\People\Workers.cs" />
-    <Compile Include="Assets\Scripts\School Numerical\Ranks And Skills\Ranks.cs" />
-    <Compile Include="Assets\Scripts\School Numerical\Ranks And Skills\Skills.cs" />
-    <Compile Include="Assets\Scripts\School Numerical\SchoolNumerical.cs" />
-    <Compile Include="Assets\Scripts\UI Controller\changescene.cs" />
-    <Compile Include="Assets\Scripts\UI Controller\getnumber.cs" />
-    <Compile Include="Assets\Scripts\UI Controller\getpanel.cs" />
-    <Compile Include="Assets\Scripts\UI Controller\shoupaicao.cs" />
+    <Compile Include="Assets\Scripts\asset\Asset\Building_asset.cs" />
+    <Compile Include="Assets\Scripts\asset\Asset\Task_asset.cs" />
+    <Compile Include="Assets\Scripts\asset\GameDataManager.cs" />
+    <Compile Include="Assets\Scripts\asset\GameOptionManager.cs" />
+    <Compile Include="Assets\Scripts\asset\XmlSaver.cs" />
+    <Compile Include="Assets\Scripts\Game Controller\SettlementController.cs" />
+    <Compile Include="Assets\Scripts\Game Controller\TaskController.cs" />
+    <Compile Include="Assets\Scripts\Game Controller\TaskList.cs" />
+    <Compile Include="Assets\Scripts\getpanel.cs" />
+    <Compile Include="Assets\Scripts\School Numerical\GameDataController.cs" />
+    <Compile Include="Assets\Scripts\Singleton Controller\SingletonController.cs" />
+    <Compile Include="Assets\Scripts\Singleton Controller\SingletonControllerForMainMenu.cs" />
     <Compile Include="Assets\Scripts\UI Controller\UIController_Main.cs" />
+    <Compile Include="Assets\Scripts\UI Controller\UIControllerForMainMenu.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/unity/unity工程/School 1.0test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

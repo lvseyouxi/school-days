@@ -2,7 +2,7 @@
  *负责人:
  *版本:
  *提交日期:
- *功能描述:  
+ *功能描述:  主游戏界面的ui控制器，仅作为参考
  *修改记录: 
 */  
 
@@ -11,37 +11,76 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIController_Main : MonoBehaviour {
+public class UIController_Main : MonoBehaviour
+{
+    //音量文本
+    public Text yinliang;
+
+    //控制音量的进度条
+    public Slider slider;
 
     [SerializeField]
-    [Tooltip("显示每回合进度的进度条，为物体slider，不可更改")]
-    private Slider slider_NextTurn;
+    private GameDataManager gameDataManager;
+
     [SerializeField]
-    [Tooltip("游戏时间控制脚本，为物体TimeController，不可更改")]
-    private TimeController timeController;
+    private GameOptionManager optionManager;
 
-    //以下三个函数用来控制下一回合进度条
-    public void NextTurnStart()
-    {
-        StartCoroutine(NextTurn());
-        //启用进度条的携程
-    }
+    [SerializeField]
+    Transform shoupai;
 
-    private IEnumerator NextTurn()
+    [SerializeField]
+    Text money, reputation, efficence, teach, manage, science;
+
+    void Update()
     {
-        while (slider_NextTurn.value<1f)
+        yinliang.text = "音量：" + optionManager.gameOption.BGMvolume;
+
+        if (Input.mousePosition.y <= Screen.height / 3)
         {
-            slider_NextTurn.value += 0.002f;
-            yield return new WaitForSeconds(0.01f);
+            shoupai.gameObject.SetActive(true);
         }
-        NextTurnEnd();
+        else
+        {
+            shoupai.gameObject.SetActive(false);
+        }
     }
 
-    public void NextTurnEnd()
+    void Start()
     {
-        StopCoroutine(NextTurn());
-        timeController.NextTurnOver();
-        slider_NextTurn.value = 0f;
-        //停止进度条的携程,并向时间控制器传递信息
+        //如果不存在主菜单单例控制器，那么GameDataManager和GameOptionManager都在主单例控制器上
+        //得到了游戏数据gameData，就可以体现在UI上
+        if (GameObject.Find("SingletonControllerForMainMenu"))
+        {
+            optionManager = GameObject.Find("SingletonControllerForMainMenu").GetComponent<GameOptionManager>();
+            gameDataManager = GameObject.Find("SingletonControllerForMainMenu").GetComponent<GameDataManager>();
+        }
+        else
+        {
+            //否则，脚本都在主单例控制器上
+            optionManager = GameObject.Find("Singleton Controller").GetComponent<GameOptionManager>();
+            gameDataManager = GameObject.Find("Singleton Controller").GetComponent<GameDataManager>();
+        }
+
+        shoupai.gameObject.SetActive(false);
+
+        money.text = "经费:" + gameDataManager.gameData.mainNumericalData.money + "k  ";
+        reputation.text = "声望:" + gameDataManager.gameData.mainNumericalData.prestige + "k  ";
+        efficence.text = "效率:" + gameDataManager.gameData.mainNumericalData.morale + "k  ";
+        teach.text = "教学:" + gameDataManager.gameData.mainNumericalData.education + "k  ";
+        manage.text = "管理:" + gameDataManager.gameData.mainNumericalData.management + "k  ";
+        science.text = "科研:" + gameDataManager.gameData.mainNumericalData.research + "k  ";
+    }
+
+    //在拖动slider的时候，将text改变，将数据类中的音量值进行改变
+    public void OnSlider1ValueChange()
+    {
+        optionManager.gameOption.BGMvolume = slider.value;
+        yinliang.text = "音量：" + optionManager.gameOption.BGMvolume;
+    }
+
+    //将音量值最终进行了存储
+    public void OnSave()
+    {
+        optionManager.Save();
     }
 }
