@@ -16,24 +16,24 @@ public class SchoolNumerical : MonoBehaviour {
 
     [Tooltip("当前士气，直接显示在UI界面上")]
     [Range(0.0f, 120.0f)]
-    public float morale;
+    public float morale=0;
 
     [Tooltip("当前声望，直接显示在UI界面上")]
-    public float prestige;
+    public float prestige=0;
 
     [Tooltip("当前经费，直接显示在UI界面上")]
-    public float money;
+    public float money=0;
 
     [Tooltip("当前科研值，直接显示在UI界面上")]
-    public float research;
+    public float research=0;
 
     [Tooltip("当前教学值，直接显示在UI界面上")]
-    public float education;
+    public float education=0;
 
     [Tooltip("当前管理值，直接显示在UI界面上")]
-    public float management;
+    public float management=0;
 
     [Tooltip("当前的学校的名次")]
-    public float ranking;
+    public float ranking=0;
 
 }

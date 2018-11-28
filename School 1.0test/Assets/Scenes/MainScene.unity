@@ -491,7 +491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6548\u7387\uFF1A"
+  m_Text: 
 --- !u!222 &536234127
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1091,7 +1091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7ECF\u8D39\uFF1A"
+  m_Text: 
 --- !u!222 &1215756338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6559\u5B66\uFF1A"
+  m_Text: 
 --- !u!222 &1341228946
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1331,6 +1331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368447699}
   - component: {fileID: 1368447700}
+  - component: {fileID: 1368447701}
   m_Layer: 0
   m_Name: UI Controller
   m_TagString: Untagged
@@ -1364,6 +1365,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider_NextTurn: {fileID: 2142352294}
   timeController: {fileID: 1324357514}
+--- !u!114 &1368447701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368447698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6f3e3b018be44aac7894bde89d54f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 0}
+  reputation: {fileID: 0}
+  efficence: {fileID: 0}
+  teach: {fileID: 0}
+  manage: {fileID: 0}
+  science: {fileID: 0}
 --- !u!1 &1369580003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6559\u5B66\uFF1A"
+  m_Text: 
 --- !u!222 &1594584361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1624,7 +1642,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u79D1\u7814\uFF1A"
+  m_Text: 
 --- !u!222 &1659765113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1699,7 +1717,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7BA1\u7406\uFF1A"
+  m_Text: 
 --- !u!222 &1720197855
 CanvasRenderer:
   m_ObjectHideFlags: 0

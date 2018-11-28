@@ -71,7 +71,9 @@
     <Compile Include="Assets\Scripts\School Numerical\Ranks And Skills\Skills.cs" />
     <Compile Include="Assets\Scripts\School Numerical\SchoolNumerical.cs" />
     <Compile Include="Assets\Scripts\UI Controller\changescene.cs" />
+    <Compile Include="Assets\Scripts\UI Controller\getnumber.cs" />
     <Compile Include="Assets\Scripts\UI Controller\getpanel.cs" />
+    <Compile Include="Assets\Scripts\UI Controller\shoupaicao.cs" />
     <Compile Include="Assets\Scripts\UI Controller\UIController_Main.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>E:/project/school-days/School 1.0test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
