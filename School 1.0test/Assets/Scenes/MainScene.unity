@@ -243,13 +243,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67b7fcb408e57cd4fb7f2fb3e3d6a891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  morale: 27.9
-  prestige: 0
-  money: 0
-  research: 0
-  education: 0
-  management: 0
-  ranking: 0
+  morale: 15.7
+  prestige: 10
+  money: 10
+  research: 10
+  education: 10
+  management: 10
+  ranking: 10
 --- !u!1 &348987188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   teach: {fileID: 1341228945}
   manage: {fileID: 1720197854}
   science: {fileID: 1659765112}
-  now1: {fileID: 0}
+  now1: {fileID: 253688986}
 --- !u!114 &1368447702
 MonoBehaviour:
   m_ObjectHideFlags: 0
